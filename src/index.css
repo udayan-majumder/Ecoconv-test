@@ -1,0 +1,356 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.blank{
+    display: none;
+}
+a{
+    text-decoration: none;
+   }
+.main-container{
+    height: 100vh;
+    width: 100%;
+}
+.navbar{
+    height:60px;
+    width:100%;
+    background-color: #292929;
+}
+.sub-navbar{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+.hamburger{
+    display: none;
+}
+.logo{
+    width: 60%;
+    height: 100%;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap:5px;
+}
+.logo img{
+    height: 50px;
+    width: 70px;
+}
+.logo-btn{
+border: none;
+outline: none;
+background: none;
+text-align: center;
+}
+.logo-btn a{
+    font-family: "Poppins";
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    transition: linear 2s;
+    text-align: center;
+
+}
+.logo-btn a:hover{
+    transition: linear 2s;
+    color:  greenyellow;
+}
+
+
+.sub-nav-items{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Poppins";
+
+   
+
+}
+.sub-items{
+background: none;
+border:none;
+font-size:18px;
+font-family: "Poppins";
+letter-spacing: 1.5px;
+}
+
+
+.sub-items a{
+    color: #fff;
+    transition: linear 1s;
+    text-align: center;
+}
+.sub-items a:hover{
+    color: greenyellow;
+    transition: linear 1s;
+    border-bottom: solid green 2px;
+}
+.hamburger-nav{
+    display: none;
+}
+.sub-products{
+    height: 100%;
+    width: 100%;
+}
+
+.main-product-container{
+    height: 90%;
+    width: 100%;
+    background-color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-product-container{
+    display: flex;
+    /* border: 2px solid green; */
+    border-radius: 30px;
+    height: 80%;
+    width: 80%;
+    box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.2);
+}
+.product-name-pic{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    align-items: center;
+    border-right: 2px solid green;
+}
+.product-name{
+    text-align: center;
+    height: 10%;
+    width: 70%;
+    font-family: "Poppins";
+    font-size: 20px;
+    color: green;
+    font-weight: 400;
+    border-bottom: 2px solid green;
+    
+}
+.product-name-pic img{
+    height: 70%;
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.product-price{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.grade-name{
+    text-align: center;
+    font-size: 20px;
+    font-family: "Poppins";
+    color: green;
+    border-bottom: 2px solid green;
+    width: 20%;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.grade-selection{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.grade-btn{
+
+    background: #fff;
+    height: 60px;
+    width: 60px;
+    border: 2px solid green;
+    border-radius: 10px;
+    color: green;
+}
+
+
+.grade-btn:hover{
+    background-color: rgb(214, 219, 214);
+}
+
+.quantity-price{
+    display: flex;
+    height: auto;
+    width: 50%;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.quantity-btn{
+    height: 40px;
+    width: 40px;
+    border: 2px solid green;
+    background: #fff;
+    color: green;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.quantity-btn:hover{
+    background-color: #d5d2d2;
+}
+.price-display{
+    height: 100%;
+    width: 60%;
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: green;
+    font-size: 20px;
+}
+
+.buying-option{
+    height: auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.quantity-display{
+    color: green;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 500;
+}
+.buy{
+    height: 40px;
+    width: 200px;
+    border: 2px solid green;
+    border-radius: 10px;
+    color:green;
+    background-color: rgb(255, 204, 0);
+    font-family: "Poppins";
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.buy:hover{
+    background-color: rgb(249, 170, 12);
+}
+@media screen and (max-width: 480px) {
+    
+    .logo img{
+        display: none;
+    }
+    .logo-btn a{
+        transition: none;
+        font-size: 18px;
+    }
+   
+    .hamburger{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 25px;
+        width: 25px;
+        background:none;
+        justify-content: space-evenly;
+        outline: none;
+        border: none;
+
+    }
+    .ham{
+        border: solid #fff 1px;
+        width: 100%;
+        transition: linear 2s;
+    }
+    .upper{
+        position: relative;
+        top:4px;
+        transition: linear 2s;
+        transform: rotate(230deg);
+    }
+    .lower{
+        position: relative;
+        bottom: 5px;
+        transition: linear 2s;
+        transform: rotate(-50deg);
+    }
+    
+    .sub-nav-items{
+        display: none;
+    }
+    .hamburger-nav{
+        position: fixed;
+        height: 100%;
+        width: 60%;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        /* border: 1px solid black; */
+     background-color: #292929;
+    }
+    .ham-btn{
+        /* align-items: left; */
+        text-align: center;
+        outline: none ;
+        border: none;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        background: none;
+        height: 20px;
+        padding:40px 0px;
+        width: 90%;
+        font-size: 25px;
+        font-family: "Poppins";
+        color: #fff;
+        
+        
+    }
+    .sub-product-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .product-name-pic{
+        height: 50%;
+        width: 100%;
+        border: none;
+    }
+    .product-name{
+        height: 15%;
+        width: 80%;
+        font-size: 16px;
+        
+    }
+    .product-name-pic img{
+        height: 60%;
+        width: 60%;
+    }
+    .product-price{
+        width: 100%;
+    }
+    .grade-selection{
+        width: 90%;
+    }
+    .grade-btn{
+        height:40px;
+        width:40px;
+    }
+    .quantity-price{
+        width: 80%;
+    }
+    .buying-option{
+        width: 90%;
+    }
+    .buy{
+        width: 100px;
+    }
+}
