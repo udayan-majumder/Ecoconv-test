@@ -18,7 +18,7 @@ const price_data= async (url)=>{
 }
 
 useEffect(()=>{
-  price_data('/public/price.json').then((data)=>{
+  price_data('./public/price.json').then((data)=>{
     updateapistr(Object.values(data))
     
 
